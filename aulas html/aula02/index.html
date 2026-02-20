@@ -1,0 +1,137 @@
+<!-- AULA 02 - HTML 
+
+AULA 02 - HTML - LINKS E TABELAS
+
+LINKS -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo Links</title>
+</head>
+
+<style>
+  * {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body>
+  <h1>Aprendendo a usar Links (Âncoras) </h1>
+  <p>Âncoras servem para navegar.</p>
+  <hr>
+  <h2 id="externo">Link Externo</h2>
+  <p>Ele navega para OUTRO site, e nele usamos o target blank que faz com que abra uma nova aba no navegador</p>
+  <a target="_blank" href="https://www.youtube.com/watch?v=tzKkDafx5RE">Rock no Youtube</a>
+  <hr>
+
+  <h2>Link Interno</h2>
+  <p>Ele navega internamente no teu próprio site, ele NÃO usar o target blank, e o href dele recebe outros htmls.</p>
+  <a href="./pagina2.html">Vai para a Página 2</a>
+  <br>
+  <a href="./pagina3.html">Vai para a Página 3</a>
+
+  <hr>
+  <h2>Link de scroll</h2>
+  <p>Ele navega dentro da MESMA página que você já está, apenas descendo ou subindo no scroll</p>
+  <a href="#externo">Ir para os links externos</a>
+  <hr>
+
+  <h2>Link de Telefone</h2>
+  <p>Ele navega diretamente para o aplicativo de discagem do telefone.</p>
+  <a href="tel:85985300694">(85) 98530-0694</a>
+  <hr>
+
+  <h2>Link de E-mail</h2>
+  <p>Ele navega diretamente para o seu provedor de email.</p>
+  <a href="mailto:abelardo.junior@gmail.com">Entre em contato</a>
+  <hr>
+
+  <h2>Link do WhatsApp</h2>
+  <p>Ele é uma combinação de um link com uma imagem com a url do wpp web.</p>
+  <a target="_blank" href="https://wa.me/85985300694">
+    <img width="80" src="https://static.vecteezy.com/system/resources/previews/018/930/564/non_2x/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png" alt="Logo do WhatsApp">
+  </a>
+  <hr>
+
+</body>
+
+</html>
+
+<!-- 
+
+APLICANDO O FAVICON
+SITE: https://favicon.io/
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+RESOLUÇÃO DA ATIVIDADE: https://abelardojr0.github.io/projeto-aula2-html/ -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Portfólio Simples</title>
+</head>
+
+<body>
+  <h1>Abelardo Júnior</h1>
+  <p><strong>Desenvolvedor FullStack</strong></p>
+  <img width="250" src="https://abelardojr0.github.io/projeto-aula2-html/perfil.jpg" alt="Foto do Perfil">
+  <hr>
+  <h2>Sobre</h2>
+  <p>Olá, meu nome é <strong>Abel</strong>. Sou um <strong>profissional dedicado</strong> com experiência em diversas áreas. Tenho interesse em <i>tecnologia <strong>desenvolvimento web</strong>, e estudos de dados.</i>
+  </p>
+  <hr>
+  <h2>Formação Acadêmica</h2>
+  <ul>
+    <li>
+      <h3>Curso Superior</h3>
+      <p><strong>Universidade X</strong> - Bacharelado em Ciência da Computação</p>
+      <p><i>Período:</i> 2015 - 2019</p>
+    </li>
+    <li>
+      <h3>Curso Técnico</h3>
+      <p><strong>Instituição Y</strong> - Especialização em Desenvolvimento Web</p>
+      <p><i>Período:</i> 2019 - 2021</p>
+    </li>
+    <li>
+      <h3>Curso Complementar</h3>
+      <p><strong>Infinity School </strong> - Desenvolvedor FullStack</p>
+      <p><i>Período:</i> 2025 - 2026</p>
+    </li>
+  </ul>
+
+  <hr>
+  <h2>Experiência Profissional</h2>
+  <ul>
+    <li>
+      <h3>Empresa Y</h3>
+      <p><strong>Cargo:</strong> Desenvolvedor Web</p>
+      <p><i>Período:</i> 2020 - Presente</p>
+    </li>
+    <li>
+      <h3>Empresa Z</h3>
+      <p><strong>Cargo:</strong> Estágio Desenvolvimento</p>
+      <p><i>Período:</i> 2019 - 2020</p>
+    </li>
+  </ul>
+
+  <hr>
+  <h2>Contato</h2>
+  <p>Você pode me encontrar nas redes sociais:</p>
+  <ul>
+    <li>
+      <a href="https://www.linkedin.com/in/abelardo-junior/">Linkedin</a>
+    </li>
+    <li>
+      <a href="https://github.com/abelardojr0">GitHub</a>
+    </li>
+  </ul>
+</body>
+
+</html>
