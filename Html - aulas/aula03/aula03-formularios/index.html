@@ -1,0 +1,103 @@
+<!-- FORMULÁRIOS
+
+DOCUMENTAÇÃO:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
+https://www.w3schools.com/html/html_forms.asp
+ATIVIDADE: https://www.hiperbytes.com.br/wp-content/uploads/2014/01/Cap7Exercicio.jpg
+
+- DENTRO DO FORMULARIO APAGAR A ACTION - DE INICIO Ñ VAI USAR POR SER DE JAVASCRIPT
+- TODO INPUT VEM ACOMPANHADO DE UM LABEL - O FOR DO LABEL DEVE SER IDENTICO O ID DO INPUT
+- DENTRO DO INPUT TEM UMA VARIAVEL CHAMADA NAME QUE SERÁ ENVIADO AO BANCO DE DADOS, QUE RECOMENDA-SE QUE SEJA IGUAL AO FOR E O ID
+- PLACEHOLDER É A TAG DA DIGITAÇÃO QUE O USUÁRIO DEVE INSERIR A INFORMAÇÃO
+- REQUIRED TORNA O CAMPO OBRIGATÓRIO - SE NO BANCO OU BACK FOR DECIDIDO COMO NOT NULL, DEVE-SE COLOCAR O REQUIRED NO CAMPO -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Aula 03 - HTML/CSS - Formulários</h1>
+    <form>
+        <fieldset>
+            <legend>Importantes</legend>
+            <label for="nome_usuario">Nome de Usuário</label>
+            <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Digite seu nome" required>
+            <br>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+            <br>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="***********************" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Situacional</legend>
+            <input type="date">
+            <br>
+            <input type="time">
+            <br>
+            <input type="datetime-local">
+            <br>
+            <input type="range">
+            <br>
+            <input type="color">
+            <br>
+            <input type="file">
+            <br>
+            <input type="number">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Diferentes (IMPORTANTES)</legend>
+            <p>Turno</p>
+
+            <input type="radio" name="turno" id="matutino" value="Matutino" checked>
+            <label for="matutino">Matutino</label>
+
+            <input type="radio" name="turno" id="vespertino" value="Vespertino">
+            <label for="vespertino">Vespertino</label>
+
+            <input type="radio" name="turno" id="nortuno" value="Nortuno">
+            <label for="nortuno">Nortuno</label>
+
+            
+            <p>Materia</p>
+
+            <input type="checkbox" name="materia" id="HTMLCSS" value="HTMLCSS">
+            <label for="HTMLCSS">HTML/CSS</label>
+
+            <input type="checkbox" name="materia" id="python" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" name="materia" id="javascript" value="Javascript">
+            <label for="javascript">Javascript</label>
+            <br>
+            <br>
+            <label for="bairros">Bairros</label>
+            <select name="bairros" id="bairros">
+                <option value="">Selecione um Bairro</option>
+                <option value="aldeota">Aldeota</option>
+                <option value="meireles">Meireles</option>
+                <option value="centro">Centro</option>
+                <option value="vicente_pinzon">Vicente Pinzon</option>
+            </select>
+            <br><br>    
+            <label for="comentario">Comentário</label>
+            <br>
+            <textarea name="comentario" id="comentario" rows="5" cols="30" maxlength="128"></textarea>
+        </fieldset>
+        <br><br>
+
+        <button>Enviar</button>
+        <!-- <button type="submit">Enviar</button> ESSE JÁ É O TIPO NATURAL -->
+        <button type="reset">Limpar</button>
+        <button type="button">Porra ninhuma</button>
+       
+    </form>
+
+</body>
+</html>

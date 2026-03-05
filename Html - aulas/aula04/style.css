@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+
+h1{
+    color: aqua;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Akaya Kanadaka", system-ui;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+}
+
+p{
+    color: aquamarine;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+div{
+    background-color: rgb(161, 104, 63);
+    width: 450px;
+    height: 250px;
+}
