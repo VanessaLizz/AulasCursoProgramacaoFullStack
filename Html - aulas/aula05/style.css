@@ -1,0 +1,31 @@
+body{
+  background-color: darksalmon;
+}
+
+div{
+  background-color: rgb(163, 52, 27);
+  color: darksalmon;
+  width: 600px;
+  /* height: 500px; */
+  padding: 20px; /* APLICA O ESPAÇAMENTO EM TODAS AS DIREÇÕES; CASO TENHA DOIS VALORES, 1º SERÁ PARA CIMA E PARA
+  BAIXO E O 2º PARA ESQUERDA E DIREITA; CASO TENHA 4 VALORES, SERÁ APLICADO CADA UM EM SENTIDO HORÁRIO */
+  border: 1px solid black; /* A ordem de valores é largura da borda, tipo e cor */
+  border-radius: 10px;
+  margin: 100px; /* MESMAS REGRAS DO PADDING*/
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.326); /* ESQUERDA, BAIXO, BLUR (QUANTIDADE DE EMBAÇADO) E COR*/
+}
+
+h1{
+  font-size: 70px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  text-decoration:line-through;
+  text-align: center;
+}
+
+p{
+  line-height: 25px;
+  font-size: 24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+}
