@@ -1,0 +1,63 @@
+/* DISPLAY - BLOCK / INLINE
+
+h1{
+    background-color: red;
+}
+div{
+    background-color: aqua;
+    padding: 10px;
+}
+ul{
+    background-color: blueviolet;
+    padding: 10px;
+}
+li{
+    background-color: brown;
+    margin-top: 3px;
+    display: inline-block;
+}
+p{
+    background-color: chartreuse;
+}
+
+a{
+    background-color: chocolate;
+    display: block;
+} */
+
+/* GRID
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+} 
+div{
+    background-color: rgb(79, 12, 12);
+    color: white;
+} */
+
+/* DISPLAY FLEX - PRINCIPIO */
+
+div{
+    background-color: rgb(79, 12, 12);
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center; /* HORIZONTAL - CASO MUDE PARA COLUMN, SERÁ VERTICAL*/ 
+    align-items: center; /* VERTICAL - CASO MUDE PARA COLUMN, SERÁ HORIZONTAL*/ 
+    flex-direction: column; /* ORIENTAÇÃO */
+    gap: 10px; /* ESPAÇAMENTO */
+}
+
+/* SPACES
+div{
+    background-color: rgb(79, 12, 12);
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;  SEM ESPAÇOS NO COMEÇO E NO FIM E ESPAÇOS IDENTICOS ENTRE OS ITENS 
+    justify-content: space-around; ESPAÇOS IDENTICOS ENTRE OS ITENS E METADE DESSES MESMO ESPAÇO NO COMEÇO E NO FIM 
+    justify-content: space-evenly; ESPAÇOS IDENTICOS NO COMEÇO NO FIM E ENTRE OS ITENS 
+    gap: 10px; 
+} */
