@@ -1,0 +1,21 @@
+//DEFINIÇÕES PADRÃO PARA DEFINIÇÃO DAS IMAGENS
+body{
+    background-image: url('https://images4.alphacoders.com/139/1394473.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+div{
+    height: 100vh;
+    background-image: url('https://images6.alphacoders.com/456/thumb-1920-456412.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* >comando de remoção de bolinhas(decoração da lista)
+list-style: none;
+hover - efeito de quando passa o mouse por cima */
