@@ -1,0 +1,25 @@
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(146, 70, 16);
+    color: white;
+}
+
+li:hover{
+    color: rgb(167, 167, 167);
+}
+
+
+img{
+    max-width: 100px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
