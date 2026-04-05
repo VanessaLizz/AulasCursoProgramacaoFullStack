@@ -1,0 +1,76 @@
+body{
+    font-family: "Roboto", sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp6012839.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: #D1D3D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    img{
+        max-width: 100px;
+    }
+    ul{
+        display: flex;
+        gap: 30px;
+        a{
+            font-size: 32px;
+            font-weight: 600;
+            font-family: "Anton", sans-serif;
+            letter-spacing: 2px;
+            color: #2C2F32;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                text-decoration: underline;
+                color: #C42037;
+            }
+        }
+    }
+}
+
+
+
+.inicio{
+    background-image: url('https://wallpaperaccess.com/full/1078967.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        background-color: #C42037;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        h1{
+            font-size: 42px;
+            font-family: "Anton", sans-serif;
+            color: #D1D3D4;
+        }
+        p{
+            font-size: 28px;
+            color: #D1D3D4;
+        }
+        a{
+            background-color: #D1D3D4;
+            color:  #C42037;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-family: "Anton", sans-serif;
+            border-radius: 10px;
+        }
+    }
+}
