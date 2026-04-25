@@ -29,3 +29,56 @@ for (let i = 1; i<=5; i++){
 
 const media = soma / 5
 console.log(media)
+
+// ARRAYS - LISTAS
+
+const frutas = ['Uva', 'Morango', 'Acerola']
+console.log(frutas[1])
+console.log(frutas)
+frutas[0] = 'Laranja'
+console.log(frutas)
+console.log(frutas.length)
+
+// ADICIONA NO FINAL (PUSH É O APPEND DO JS)
+
+const frutas = ['Uva', 'Morango', 'Acerola']
+console.log(frutas)
+frutas.push('Melancia')
+console.log(frutas)
+
+// REMOVE O ÚLTIMO
+
+const frutas = ['Uva', 'Morango', 'Acerola']
+console.log(frutas)
+frutas.pop()
+console.log(frutas)
+
+// ADICIONA NO COMEÇO (É MERMO QUE BOSTA)
+
+const frutas = ['Uva', 'Morango', 'Acerola']
+console.log(frutas)
+frutas.unshift('Melancia')
+console.log(frutas)
+
+// REMOVE O PRIMEIRO (MAIS BOSTA QUE ESSE DE CIMA)
+
+const frutas = ['Uva', 'Morango', 'Acerola']
+console.log(frutas)
+frutas.shift()
+console.log(frutas)
+
+// ADICIONANDO EM UM LUGAR ESPECÍFICO (NINGUEM USA ISSO PRA NADA)
+
+const frutas = ['Uva', 'Morango', 'Acerola']
+console.log(frutas)
+frutas.splice(1, 0, 'Laranja') // EQUIVALENTE AO INSERT DO PY
+console.log(frutas)
+
+// REMOVENDO O ITEM PELO NOME (INFELIZMENTE USAMOS MTO KKKK )
+// ISSO EQUIVALE O REMOVE DO Py
+
+const frutas = ['Uva', 'Morango', 'Acerola']
+console.log(frutas)
+const posicao_fruta = frutas.indexOf('Morango') // ISSO AQUI VAI BUSCAR A POSIÇÃO DO ITEM
+frutas.splice(posicao_fruta, 1) // AI REMOVE O ITEM PELA POSIÇÃO ENCONTRADA.
+console.log(frutas)
