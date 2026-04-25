@@ -15,3 +15,17 @@ if (idade < 16){
 } else{
   console.log("Seu voto é obrigatório")
 }
+
+// ATIVIDADE 2
+// FAÇA UM PROGRAMA QUE PEDE PARA O USUÁRIO DIGITAR 5 IDADES (USANDO UM FOR)
+// E ENTÃO NO FINAL DO FOR, MOSTRE NO CONSOLE A MÉDIA DAS IDADES.
+
+let soma = 0
+
+for (let i = 1; i<=5; i++){
+  const idade = Number(prompt("Digite uma idade: "))
+  soma += idade
+}
+
+const media = soma / 5
+console.log(media)
