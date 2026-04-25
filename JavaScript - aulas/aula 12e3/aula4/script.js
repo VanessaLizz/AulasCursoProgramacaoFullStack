@@ -1,36 +1,17 @@
-const senha = prompt("Digite sua senha: ")
-let qtde_requisitos_cumpridos = 0
-const minusculas = "abcdefghijklmnopqrstuvxwyzçâãàáèéêóôõíú"
-const maisculas = minusculas.toUpperCase()
-const numeros = '0123456789'
-let tem_8_caracteres = 0
-let tem_letras_minusculas = 0
-let tem_letras_maiusculas = 0
-let tem_numero = 0
-let tem_caracter_especial = 0
+// ATIVIDADE 1 
+// FAÇA UM PROGRAMA QUE PEDE PARA O USUÁRIO DIGITAR SUA IDADE
+// E MOSTRE NA TELA O DIREITO DE VOTO DELE
+// OPÇOES:
+// 1 - NÃO PODE VOTAR ( SE A IDADE FOR MENOR QUE 16)
+// 2 - FACULTATIVO (SE A IDADE TIVER ENTRE 16 E 17 OU ACIMA DE 70)
+// 3 - OBRIGATÓRIO (SE A IDADE ESTIVER ENTRE 18 E 69)
 
-if(senha.length >= 8){
-    tem_8_caracteres = 1
-}
+const idade = Number(prompt("Digite a sua idade: "))
 
-for(let element of senha){
-    if(minusculas.includes(element)){
-        tem_letras_minusculas = 1
-    }else if (maisculas.includes(element)){
-        tem_letras_maiusculas = 1
-    }else if(numeros.includes(element)){
-        tem_numero = 1
-    }else{
-        tem_caracter_especial = 1
-    }
-}
-
-qtde_requisitos_cumpridos = tem_8_caracteres + tem_caracter_especial + tem_letras_maiusculas + tem_letras_minusculas + tem_numero
-
-if(qtde_requisitos_cumpridos <= 2){
-    console.log("SENHA FRACA")
-}else if(qtde_requisitos_cumpridos <= 4){
-    console.log("SENHA MÉDIA")
-}else{
-    console.log("SENHA FORTE")
+if (idade < 16){
+  console.log("Você não possui idade mínima para votar")
+} else if(idade <=17 || idade > 70){
+  console.log("Seu voto é facultativo")
+} else{
+  console.log("Seu voto é obrigatório")
 }
