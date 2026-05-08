@@ -1,84 +1,109 @@
-// ATIVIDADE 1 
-// FAÇA UM PROGRAMA QUE PEDE PARA O USUÁRIO DIGITAR SUA IDADE
-// E MOSTRE NA TELA O DIREITO DE VOTO DELE
-// OPÇOES:
-// 1 - NÃO PODE VOTAR ( SE A IDADE FOR MENOR QUE 16)
-// 2 - FACULTATIVO (SE A IDADE TIVER ENTRE 16 E 17 OU ACIMA DE 70)
-// 3 - OBRIGATÓRIO (SE A IDADE ESTIVER ENTRE 18 E 69)
+// FUNÇÕES
 
-const idade = Number(prompt("Digite a sua idade: "))
-
-if (idade < 16){
-  console.log("Você não possui idade mínima para votar")
-} else if(idade <=17 || idade > 70){
-  console.log("Seu voto é facultativo")
-} else{
-  console.log("Seu voto é obrigatório")
+function cumprimentar(nome){
+    return `Olá ${nome}`
 }
 
-// ATIVIDADE 2
-// FAÇA UM PROGRAMA QUE PEDE PARA O USUÁRIO DIGITAR 5 IDADES (USANDO UM FOR)
-// E ENTÃO NO FINAL DO FOR, MOSTRE NO CONSOLE A MÉDIA DAS IDADES.
+console.log(cumprimentar('abel'))
+console.log(cumprimentar('maria'))
+console.log(cumprimentar('joao'))
 
-let soma = 0
+// VARIOS PARÂMETROS E CONDICIONAIS
 
-for (let i = 1; i<=5; i++){
-  const idade = Number(prompt("Digite uma idade: "))
-  soma += idade
+function cumprimentar(hora, nome){
+    if(hora >= 5 && hora <= 12){
+        return `Bom dia ${nome}`
+    }else if(hora >=13 && hora <= 18){
+        return `Boa tarde ${nome}`
+    }else{
+        return `Boa noite ${nome}`
+    }
 }
 
-const media = soma / 5
-console.log(media)
+console.log(cumprimentar(16, 'abel'))
+console.log(cumprimentar(9, 'maria'))
+console.log(cumprimentar(21, 'joao'))
 
-// ARRAYS - LISTAS
+// ATIVIDADE 1
+// FAÇA UMA FUNÇÃO QUE RECEBE NO PARÂMETRO A IDADE E O NOME DE UMA PESSOA
+// E ENTÃO RETORNE O DIREITO DE VOTO DESSA PESSOA
+// CONSIDERANDO:
+// - ABAIXO DE 16 NÃO PODE VOTAR
+// - ENTRE 16 E 17 E ACIMA DE 70 O VOTO É FACULTATIVO
+// - ENTRE 18 E 69 O VOTO É OBRIGATÓRIO
+// TESTE NO CONSOLE PELO MENOS 2 VEZES.
 
-const frutas = ['Uva', 'Morango', 'Acerola']
-console.log(frutas[1])
-console.log(frutas)
-frutas[0] = 'Laranja'
-console.log(frutas)
-console.log(frutas.length)
+function verificar_idade(idade, nome){
+  if (idade < 16){
+    return `${nome}, você não pode votar`
+  } else if (idade <= 17 || idade > 70){
+    return `${nome}, seu voto é facultativo`
+  } else {
+    return `${nome}, seu voto é obrigatório`
+  }
+}
 
-// ADICIONA NO FINAL (PUSH É O APPEND DO JS)
+console.log(verificar_idade(14, 'Ana'))
+console.log(verificar_idade(75, 'Maria'))
+console.log(verificar_idade(47, 'João'))
 
-const frutas = ['Uva', 'Morango', 'Acerola']
-console.log(frutas)
-frutas.push('Melancia')
-console.log(frutas)
+// ARROW FUNCTION - utilizar apenas se não for usar a função depois
 
-// REMOVE O ÚLTIMO
+function cumprimentar(nome){
+    return `Olá ${nome}`
+}
 
-const frutas = ['Uva', 'Morango', 'Acerola']
-console.log(frutas)
-frutas.pop()
-console.log(frutas)
+// 1º PASSO - É TIRAR O NOME DA FUNÇÃO
+function(nome){
+    return `Olá ${nome}`
+}
 
-// ADICIONA NO COMEÇO (É MERMO QUE BOSTA)
+// 2º PASSO - É COLOCAR A SETA (A FLECHA) DEPOIS DO PARÂMENTO
+function (nome) => {
+    return `Olá ${nome}`
+}
 
-const frutas = ['Uva', 'Morango', 'Acerola']
-console.log(frutas)
-frutas.unshift('Melancia')
-console.log(frutas)
+// 3º PASSO - TIRAR A PALAVRA 'FUNCTION'
+(nome) => {
+    return `Olá ${nome}`
+}
 
-// REMOVE O PRIMEIRO (MAIS BOSTA QUE ESSE DE CIMA)
+// REGRAS OPCIONAIS
 
-const frutas = ['Uva', 'Morango', 'Acerola']
-console.log(frutas)
-frutas.shift()
-console.log(frutas)
+// 4º PASSO - SE SÓ TIVER UMA LINHA NÃO PRECISA DA PALAVRA 'RETURN'
+(nome) => {
+    `Olá ${nome}`
+}
 
-// ADICIONANDO EM UM LUGAR ESPECÍFICO (NINGUEM USA ISSO PRA NADA)
+// 5º PASSO - SE NÃO TIVER ESCRITO O RETURN NÃO PRECISA DAS CHAVES
+(nome) => `Olá ${nome}`
 
-const frutas = ['Uva', 'Morango', 'Acerola']
-console.log(frutas)
-frutas.splice(1, 0, 'Laranja') // EQUIVALENTE AO INSERT DO PY
-console.log(frutas)
 
-// REMOVENDO O ITEM PELO NOME (INFELIZMENTE USAMOS MTO KKKK )
-// ISSO EQUIVALE O REMOVE DO Py
+// 6º PASSO - SE SÓ TIVER 1 PARÂMETRO NÃO PRECISA DOS PARÊNTESES
+nome => `Olá ${nome}`
+FILTER
+// for (let element of idades){
+    //     if(element >= 18){
+        //         maiores_idade.push(element)
+        //     }
+        // }
+        // console.log(idades)
+        // console.log(maiores_idade)
+        
+        
+// MÉTODOS AVANÇADOS DE ARRAYS
+// const maiores_idade = []
+// function filtrarIdades(lista_idades){
+//     const maiores_de_idade = []
+//     for(let element of lista_idades){
+//         if (element >= 18){
+//             maiores_de_idade.push(element)
+//         }
+//     }
+//     return maiores_de_idade
+// }
 
-const frutas = ['Uva', 'Morango', 'Acerola']
-console.log(frutas)
-const posicao_fruta = frutas.indexOf('Morango') // ISSO AQUI VAI BUSCAR A POSIÇÃO DO ITEM
-frutas.splice(posicao_fruta, 1) // AI REMOVE O ITEM PELA POSIÇÃO ENCONTRADA.
-console.log(frutas)
+const idades = [30, 58, 16, 21, 14, 8, 60, 18]
+const maiores = idades.filter(e => e >= 18)
+console.log(idades)
+console.log(maiores)
