@@ -1,0 +1,17 @@
+p{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.open{
+    background-color: rgb(51, 162, 51);
+    color: rgb(209, 208, 208);
+    border-radius: 8px;
+}
+.close{
+    background-color: rgb(162, 58, 51);
+    color: rgb(209, 208, 208);
+    border-radius: 8px;
+}
