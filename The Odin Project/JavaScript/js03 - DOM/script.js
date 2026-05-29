@@ -26,3 +26,10 @@ paragrafoBloco.textContent = 'Me too!'
 
 container.append(content, paragrafo, texto, bloco)
 bloco.append(textoBloco, paragrafoBloco)
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    alert(button.id);
+  });
+});
