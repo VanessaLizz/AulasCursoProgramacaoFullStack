@@ -3,7 +3,7 @@ section{
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         div{
-            background-color: rgb(76, 57, 73);
+            background-color: rgb(23, 2, 30);
             color: rgb(235, 173, 173);
             display: flex;
             justify-content: center;
@@ -20,10 +20,10 @@ section{
     }
 
 body{
-    background-color: rgb(159, 131, 155);
+    background-color: rgb(107, 95, 105);
 }
 
 h1{
-    color: rgb(49, 30, 30);
+    color: rgb(37, 18, 18);
     text-align: center
 }
