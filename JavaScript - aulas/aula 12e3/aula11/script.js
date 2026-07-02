@@ -20,7 +20,10 @@ async function buscarFilmes() {
             const nova_imagem = document.createElement("img")
             nova_imagem.src = `https://image.tmdb.org/t/p/w500${element.poster_path}`
 
-            novo_filme.append(nova_imagem, novo_titulo);
+            const nova_nota = document.createElement("p");
+            nova_nota.textContent = `⭐ Nota: ` + element.vote_average.toFixed(1);
+
+            novo_filme.append(nova_imagem, novo_titulo, nova_nota);
 
             resultados.appendChild(novo_filme);
         });
