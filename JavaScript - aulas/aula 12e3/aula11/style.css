@@ -1,0 +1,28 @@
+section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        div{
+            background-color: rgb(76, 57, 73);
+            color: rgb(235, 173, 173);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:  column;
+            gap: 5px;
+            padding: 8px;
+            border-radius: 5px;
+            img{
+                max-width: 250px;
+                border-radius: 250px;
+            }
+        }
+    }
+
+body{
+    background-color: rgb(159, 131, 155);
+}
+
+h1{
+    color: rgb(49, 30, 30);
+}
